@@ -16,17 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny2\src\Shiny.Core\Shiny.Core.csproj", "{9C012FDF-7B0F-49C9-A3FC-186528B0FD0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny\src\Shiny.Core\Shiny.Core.csproj", "{9C012FDF-7B0F-49C9-A3FC-186528B0FD0C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{4B933461-A6FB-4F36-89B7-8242C447555D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Jobs", "..\..\shiny2\src\Shiny.Jobs\Shiny.Jobs.csproj", "{27B7DDC8-07A4-4287-8B64-887366FEE5E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Jobs", "..\..\shiny\src\Shiny.Jobs\Shiny.Jobs.csproj", "{27B7DDC8-07A4-4287-8B64-887366FEE5E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Locations.Common", "..\..\shiny2\src\Shiny.Locations.Common\Shiny.Locations.Common.csproj", "{F4325FA9-5953-46FF-95FC-042B857FF23B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Locations.Common", "..\..\shiny\src\Shiny.Locations.Common\Shiny.Locations.Common.csproj", "{F4325FA9-5953-46FF-95FC-042B857FF23B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Locations", "..\..\shiny2\src\Shiny.Locations\Shiny.Locations.csproj", "{092727C6-FFF2-4B4D-9010-38823AE2B771}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Locations", "..\..\shiny\src\Shiny.Locations\Shiny.Locations.csproj", "{092727C6-FFF2-4B4D-9010-38823AE2B771}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Notifications", "..\..\shiny2\src\Shiny.Notifications\Shiny.Notifications.csproj", "{6AE7F022-792E-4BF3-9846-3CEC0E83DC21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Notifications", "..\..\shiny\src\Shiny.Notifications\Shiny.Notifications.csproj", "{6AE7F022-792E-4BF3-9846-3CEC0E83DC21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

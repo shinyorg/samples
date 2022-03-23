@@ -16,17 +16,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny", "..\..\shiny2\src\Shiny\Shiny.csproj", "{4F81B48F-0547-4AB2-AC0E-FF19B1E0044A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny", "..\..\shiny\src\Shiny\Shiny.csproj", "{4F81B48F-0547-4AB2-AC0E-FF19B1E0044A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{AF2B0BC2-6613-475A-A0BC-BFBE83F42BDC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.BluetoothLE", "..\..\shiny2\src\Shiny.BluetoothLE\Shiny.BluetoothLE.csproj", "{04BF1C92-84F1-4717-9287-C56479E4751A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.BluetoothLE", "..\..\shiny\src\Shiny.BluetoothLE\Shiny.BluetoothLE.csproj", "{04BF1C92-84F1-4717-9287-C56479E4751A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.BluetoothLE.Common", "..\..\shiny2\src\Shiny.BluetoothLE.Common\Shiny.BluetoothLE.Common.csproj", "{E2ACCCB9-4045-42F0-A552-BB6F05B5B869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.BluetoothLE.Common", "..\..\shiny\src\Shiny.BluetoothLE.Common\Shiny.BluetoothLE.Common.csproj", "{E2ACCCB9-4045-42F0-A552-BB6F05B5B869}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny2\src\Shiny.Core\Shiny.Core.csproj", "{425AAE37-51AE-4F99-8415-D80945FB8656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny\src\Shiny.Core\Shiny.Core.csproj", "{425AAE37-51AE-4F99-8415-D80945FB8656}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Generators", "..\..\shiny2\src\Shiny.Generators\Shiny.Generators.csproj", "{5D399332-156C-4BFC-A009-D92B1833EBD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Generators", "..\..\shiny\src\Shiny.Generators\Shiny.Generators.csproj", "{5D399332-156C-4BFC-A009-D92B1833EBD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

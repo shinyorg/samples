@@ -22,17 +22,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{7D3EEC4B-C4F4-4DD1-AF43-04A1FF127014}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny", "..\..\shiny2\src\Shiny\Shiny.csproj", "{D421DC49-D741-493F-986B-94A4631E5C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny", "..\..\shiny\src\Shiny\Shiny.csproj", "{D421DC49-D741-493F-986B-94A4631E5C09}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny2\src\Shiny.Core\Shiny.Core.csproj", "{B13BF7BD-44A6-4352-94F8-2589A0200E05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Core", "..\..\shiny\src\Shiny.Core\Shiny.Core.csproj", "{B13BF7BD-44A6-4352-94F8-2589A0200E05}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Generators", "..\..\shiny2\src\Shiny.Generators\Shiny.Generators.csproj", "{A0AB5902-8B00-4981-8701-7C3702EC0AC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Generators", "..\..\shiny\src\Shiny.Generators\Shiny.Generators.csproj", "{A0AB5902-8B00-4981-8701-7C3702EC0AC6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Jobs", "..\..\shiny2\src\Shiny.Jobs\Shiny.Jobs.csproj", "{1B46671E-8D3C-4426-8139-DC223C2475EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Jobs", "..\..\shiny\src\Shiny.Jobs\Shiny.Jobs.csproj", "{1B46671E-8D3C-4426-8139-DC223C2475EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Notifications", "..\..\shiny2\src\Shiny.Notifications\Shiny.Notifications.csproj", "{C9F9B6E6-9E9D-4B42-86BD-311A8B19A22A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Notifications", "..\..\shiny\src\Shiny.Notifications\Shiny.Notifications.csproj", "{C9F9B6E6-9E9D-4B42-86BD-311A8B19A22A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Nfc", "..\..\shiny2\src\Shiny.Nfc\Shiny.Nfc.csproj", "{BB397D1E-0EE5-446B-9999-9C9C682CF709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shiny.Nfc", "..\..\shiny\src\Shiny.Nfc\Shiny.Nfc.csproj", "{BB397D1E-0EE5-446B-9999-9C9C682CF709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

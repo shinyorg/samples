@@ -11,7 +11,7 @@ using Android.Content;
 namespace Sample.Droid
 {
     [Activity(
-        Label = "GPS",
+        Label = "Jobs",
         Icon = "@mipmap/icon",
         Theme = "@style/MainTheme",
         MainLauncher = true,
@@ -31,20 +31,6 @@ namespace Sample.Droid
 			base.OnCreate(savedInstanceState);
 			Forms.Init(this, savedInstanceState);
 			this.LoadApplication(new App());
-		}
-
-
-		protected override void OnNewIntent(Intent intent)
-		{
-			base.OnNewIntent(intent);
-			this.ShinyOnNewIntent(intent);
-		}
-
-
-		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
-		{
-			base.OnActivityResult(requestCode, resultCode, data);
-			this.ShinyOnActivityResult(requestCode, resultCode, data);
 		}
 
 

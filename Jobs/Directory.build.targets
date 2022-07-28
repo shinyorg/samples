@@ -1,25 +1,37 @@
 <Project>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
-		<PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-		<PackageReference Update="sqlite-net-pcl" Version="1.8.116" />
-		<PackageReference Update="Shiny.Framework" Version="1.3.0.106" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Shiny" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Core" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Jobs" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Net.Http" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Locations" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Beacons" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.BluetoothLE" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Nfc" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Notifications" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Push" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Push.AzureNotificationHubs" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Push.FirebaseMessaging" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Push.OneSignal" Version="$(ShinyVersion)" />
-		<PackageReference Update="Shiny.Sensors" Version="$(ShinyVersion)" />
-	</ItemGroup>
+	<Choose>
+		<When Condition="'$(UseNuget)' == 'true'">
+			<ItemGroup>
+				<PackageReference Include="Shiny.Jobs" Version="$(ShinyVersion)" />
+				<PackageReference Include="Shiny.Notifications" Version="$(ShinyVersion)" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Core\Shiny.Core.csproj">
+					<Name>Shiny.Core</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Jobs\Shiny.Jobs.csproj">
+					<Name>Shiny.Jobs</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Notifications\Shiny.Notifications.csproj">
+					<Name>Shiny.Notifications</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Notifications.Common\Shiny.Notifications.Common.csproj">
+					<Name>Shiny.Notifications.Common</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Locations\Shiny.Locations.csproj">
+					<Name>Shiny.Locations</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Locations.Common\Shiny.Locations.Common.csproj">
+					<Name>Shiny.Locations.Common</Name>
+				</ProjectReference>
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
 </Project>

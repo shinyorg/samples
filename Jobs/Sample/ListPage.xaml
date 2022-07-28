@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<shared:SampleContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<sample:SampleContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                           xmlns:sample="clr-namespace:Sample"
-                          xmlns:shared="clr-namespace:Sample;assembly=Sample.Shared"
                           xmlns:shiny="clr-namespace:Shiny.Jobs;assembly=Shiny.Jobs"
                           x:DataType="sample:ListViewModel"
                           x:Class="Sample.ListPage"
@@ -63,4 +62,4 @@
                     Grid.Row="3" />
         </Grid>
     </ContentPage.Content>
-</shared:SampleContentPage>
+</sample:SampleContentPage>

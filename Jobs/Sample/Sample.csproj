@@ -11,11 +11,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Shiny.Jobs" />
-		<PackageReference Include="Shiny.Notifications" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\..\_Template\Sample.Shared\Sample.Shared.csproj" />
+	  <EmbeddedResource Include="Resources\fa-brands-400.ttf" />
+	  <EmbeddedResource Include="Resources\fa-regular-400.ttf" />
+	  <EmbeddedResource Include="Resources\fa-solid-900.ttf" />
+	  <EmbeddedResource Include="Resources\notification.mp3" />
 	</ItemGroup>
 </Project>

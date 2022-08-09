@@ -18,8 +18,8 @@ namespace Sample
                 .WhenReceived()
                 .Subscribe(async pr =>
                 {
-                    //var msg = pr.Notification?.Message ?? "Push seen on the foreground";
-                    //await this.Alert(msg, "Push Received");
+                    var msg = pr.Notification?.Message ?? "Push seen on the foreground";
+                    await this.Alert(msg, "Push Received");
                 });
         }
 

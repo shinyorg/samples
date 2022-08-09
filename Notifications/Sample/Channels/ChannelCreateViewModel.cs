@@ -112,6 +112,8 @@ namespace Sample.Channels
                     channel.SetSoundFromEmbeddedResource(this.GetType().Assembly, "Sample.Resource.notification.mp3");
                 else
                     channel.CustomSoundPath = "notification.mp3";
+
+                channel.Sound = ChannelSound.Custom;
             }
 
             if (this.Action1.IsEnabled)

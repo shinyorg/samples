@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Shiny;
 using Shiny.BluetoothLE;
-using Shiny.Notifications;
 
 
 namespace Sample
@@ -10,36 +9,33 @@ namespace Sample
     public class BleClientDelegate : BleDelegate
     {
         readonly SampleSqliteConnection conn;
-        readonly INotificationManager notifications;
 
 
-        public BleClientDelegate(SampleSqliteConnection conn, INotificationManager notificationManager)
+        public BleClientDelegate(SampleSqliteConnection conn)
         {
             this.conn = conn;
-            this.notifications = notificationManager;
         }
 
 
-        public override async Task OnAdapterStateChanged(AccessState state)
+        public override Task OnAdapterStateChanged(AccessState state)
         {
-            if (state == AccessState.Disabled)
-                await this.notifications.Send("BLE State", "Turn on Bluetooth already");
+            return this.conn.InsertAsync(new ShinyEvent
+            {
+                Text = "BLE Adapter Status",
+                Detail = $"New Status: {state}",
+                Timestamp = DateTime.Now
+            });
         }
 
 
-        public override async Task OnConnected(IPeripheral peripheral)
+        public override Task OnConnected(IPeripheral peripheral)
         {
-            //await this.services.Connection.InsertAsync(new BleEvent
-            //{
-            //    Description = $"Peripheral '{peripheral.Name}' Connected",
-            //    Timestamp = DateTime.Now
-            //});
-            //await this.services.Notifications.Send(
-            //    this.GetType(),
-            //    true,
-            //    "BluetoothLE Device Connected",
-            //    $"{peripheral.Name} has connected"
-            //);
+            return this.conn.InsertAsync(new ShinyEvent
+            {
+                Text = "Peripheral Connected",
+                Detail = peripheral.Name,
+                Timestamp = DateTime.Now
+            });
         }
     }
 }

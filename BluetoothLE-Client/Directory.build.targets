@@ -1,39 +1,27 @@
 <Project>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	</ItemGroup>
 
-	<!--include what libs you need-->
-	<ItemGroup>
-		<PackageReference Include="Shiny" Version="$(ShinyVersion)" />
-		<PackageReference Include="Shiny.BluetoothLE" Version="$(ShinyVersion)" />
-		<PackageReference Include="Shiny.Notifications" Version="$(ShinyVersion)" />
-	</ItemGroup>
-
-	<!-- These must be included in your solution in order for this to work
-	<ItemGroup>
-		<PackageReference Include="$(DebugDirectory)\Shiny\Shiny.csproj">
-			<Name>Shiny</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.Core\Shiny.Core.csproj">
-			<Name>Shiny.Core</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.Generators\Shiny.Generators.csproj">
-			<Name>Shiny.Generators</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.Jobs\Shiny.Jobs.csproj">
-			<Name>Shiny.Jobs</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.BluetoothLE\Shiny.BluetoothLE.csproj">
-			<Name>Shiny.BluetoothLE</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.BluetoothLE.Common\Shiny.BluetoothLE.Common.csproj">
-			<Name>Shiny.BluetoothLE.Common</Name>
-		</PackageReference>
-		<PackageReference Include="$(DebugDirectory)\Shiny.Notifications\Shiny.Notifications.csproj">
-			<Name>Shiny.Notifications</Name>
-		</PackageReference>
-	</ItemGroup>
-	-->
+	<Choose>
+		<When Condition="'$(UseNuget)' == 'true'">
+			<ItemGroup>
+				<PackageReference Include="Shiny.BluetoothLE" Version="$(ShinyVersion)" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Core\Shiny.Core.csproj">
+					<Name>Shiny.Core</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.BluetoothLE\Shiny.BluetoothLE.csproj">
+					<Name>Shiny.BluetoothLE</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.BluetoothLE.Common\Shiny.BluetoothLE.Common.csproj">
+					<Name>Shiny.BluetoothLE.Common</Name>
+				</ProjectReference>
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
 </Project>

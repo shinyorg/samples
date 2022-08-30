@@ -1,0 +1,24 @@
+<Project>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    </ItemGroup>
+
+	<Choose>
+		<When Condition="'$(UseNuget)' == 'true'">
+			<ItemGroup>
+				<PackageReference Include="Shiny.SpeechRecognition" Version="$(ShinyVersion)" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<ItemGroup>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Core\Shiny.Core.csproj">
+					<Name>Shiny.Core</Name>
+				</ProjectReference>
+				<ProjectReference Include="$(DebugDirectory)\Shiny.Jobs\Shiny.SpeechRecognition.csproj">
+					<Name>Shiny.SpeechRecognition</Name>
+				</ProjectReference>
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+</Project>

@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<shared:SampleContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<sample:SampleContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                           xmlns:sample="clr-namespace:Sample"
-                          xmlns:shared="clr-namespace:Sample;assembly=Sample.Shared"
                           x:Class="Sample.ConversationPage"
                           x:DataType="sample:ConversationViewModel"
                           Title="Conversation">
@@ -16,7 +15,7 @@
             <Button Text="Start Conversation" Command="{Binding Start}" />
             <ListView ItemsSource="{Binding Items}">
                 <ListView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="sample:ListItemViewModel">
                         <ViewCell>
                             <ViewCell.View>
                                 <StackLayout>
@@ -30,4 +29,4 @@
             </ListView>
         </StackLayout>
     </ContentPage.Content>
-</shared:SampleContentPage>
+</sample:SampleContentPage>

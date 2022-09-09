@@ -25,11 +25,9 @@
 		<Otherwise>
 			<ItemGroup>
 				<ProjectReference Include="$(SubModulePath)/Shiny.Extensions.Push/Shiny.Extensions.Push.csproj">
-					<Name>Shiny.Extensions.Push</Name>
 				</ProjectReference>
 
 				<ProjectReference Include="$(SubModulePath)/Shiny.Extensions.Push.Abstractions/Shiny.Extensions.Push.Abstractions.csproj">
-					<Name>Shiny.Extensions.Push.Abstractions</Name>
 				</ProjectReference>
 			</ItemGroup>
 		</Otherwise>

@@ -3,7 +3,7 @@
     <PropertyGroup>
         <LangVersion>8.0</LangVersion>
         <Nullable>enable</Nullable>
-        <ShinyVersion>2.5.5</ShinyVersion>
+        <ShinyVersion>2.6.2</ShinyVersion>
 		<DebugDirectory>../../../submodules/shiny/src</DebugDirectory>
 		<UseNuget>true</UseNuget>
 		<PushProvider>firebase</PushProvider><!--valid entries are blank (native), onesignal, firebase, & azure-->
@@ -26,6 +26,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
 	</ItemGroup>
 </Project>

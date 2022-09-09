@@ -20,8 +20,8 @@ namespace Sample.iOS
                 // if you want to try initialization with straight config vars instead of a google-services.json - set the Firebase node in config and switch some comments in Startup.cs
                 RegisterPlatform = (services, config) =>
                 {
-                    var cfg = config.GetSection("Firebase").Get<Shiny.Push.FirebaseMessaging.FirebaseConfiguration>() ?? throw new ArgumentException("Missing Firebase configuration");
-                    services.UsePush<MyPushDelegate>(cfg);
+                    var cfg = config.GetSection("Firebase").Get<Shiny.Push.FirebaseConfiguration>() ?? throw new ArgumentException("Missing Firebase configuration");
+                    services.UseFirebaseMessaging<MyPushDelegate>(cfg);
                 }
 #endif
             }, options);

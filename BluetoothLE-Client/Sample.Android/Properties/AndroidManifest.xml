@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.shiny.test" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.shiny.test" android:installLocation="auto" xmlns:tools="http://schemas.android.com/tools">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
 	<application android:label="Sample" android:theme="@style/MainTheme"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" tools:node="replace" android:maxSdkVersion="30" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" tools:node="replace" android:maxSdkVersion="30" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" android:maxSdkVersion="30" />
+	<uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" android:maxSdkVersion="30" />
+	<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" tools:node="replace" tools:targetApi="31" />
+	<uses-permission android:name="android.permission.BLUETOOTH_SCAN" tools:node="replace" android:usesPermissionFlags="neverForLocation" tools:targetApi="31" />
 </manifest>

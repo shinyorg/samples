@@ -8,6 +8,5 @@
     <TabbedPage.Children>
         <sample:ScanPage />
         <sample:LogsPage />
-        <sample:TestPage />
     </TabbedPage.Children>
 </TabbedPage>

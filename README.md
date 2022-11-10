@@ -1,4 +1,6 @@
-# Shiny Samples
+# Shiny .NET v2 Samples
+
+> If you are looking for v3 Samples, you can find them in the main repository [https://github.com/shinyorg/shiny/tree/master/samples](https://github.com/shinyorg/shiny/tree/master/samples)
 
 ## NOTES
 1. Many samples have Shiny projects linked for debugging/testing by the devs, but the samples are defaulted to use nuget packages.  If the Shiny projects aren't loading, don't worry - IGNORE THEM.  The project will build just fine with nuget.  They are linked through submodules if needed for debugging against the shiny source code
@@ -28,8 +30,7 @@
 |[Local Notifications](Notifications)|See how the best-of-breed local notifications for Xamarin module runs|
 |[Sensors](Sensors)|Reactive sensors|RX was made for this!|
 |[Speech Recognition](SpeechRecognition)|Local speech recognition|while not officially supported by Shiny|we give this away just because|
-|Platform Intrisics|TODO|
-|Configuration Extensions|TODO|
+
 
 ### Integrations
 |Link/Title|Description|
@@ -37,9 +38,7 @@
 |[Prism + DryIoc + Shiny](Integration-Prism)|Prism Integration Example
 |[Better Prism/RXUI Integration via Shiny.Framework](Integration-Best-Prism-RXUI)|Prism + ReactiveUI + Shiny with ease
 |[Shiny Framework](Framework)|All the other toys our framework offers|
-|[AppCenter](AppCenter)|This sample shows how to configure AppCenter logging in Shiny using Microsoft.
-Extensions.Logging and Shiny.Logging.AppCenter|
-|Firebase Analytics|TODO|
+|[AppCenter](AppCenter)|This sample shows how to configure AppCenter logging in Shiny using Microsoft.Extensions.Logging and Shiny.Logging.AppCenter|
 
 
 ### Boilerplate Stuff

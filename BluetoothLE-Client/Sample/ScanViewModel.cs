@@ -36,8 +36,6 @@ namespace Sample
                     });
                 });
 
-            this.NavToTest = this.NavigateCommand<TestPage>();
-
             this.ToggleAdapterState = new Command(
                 async () =>
                 {
@@ -117,7 +115,6 @@ namespace Sample
         }
 
 
-        public ICommand NavToTest { get; }
         public ICommand ScanToggle { get; }
         public ICommand ToggleAdapterState { get; }
         public bool CanControlAdapterState { get; }

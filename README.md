@@ -7,6 +7,7 @@
 2. DO NOT USE THESE FOR SENDING ISSUES - Why you ask?  Because they can often be out of date with a new Android release, a new Xamarin release, a new Xamarin Forms release, etc.  There is a lot of features & a lot of samples and at present - ONLY 1 maintainer!
 3. Most nuget versions are managed through Directory.build.props which means you cannot not use the nuget manager to update packages.  This is due to how we swap between nugets for samples and debugging/testing
 4. These samples are meant as GUIDELINES on how to use the libraries (which means that they don't use every feature and again why we don't want bug reports for them)
+5. They are no guaranteed to be up-to-date with the latest versions of the SDK or Shiny.  SDK updates can break builds.  AGAIN, samples are samples - use these as guidelines.
 
 
 ## Mobile/Xamarin

@@ -188,6 +188,7 @@ namespace Sample
 
                                 return ticks;
                             }))
+                            .Switch()
                             .Subscribe(x => Device.BeginInvokeOnMainThread(() =>
                                 this.SubscribersLastValue = x.ToString()
                             ));

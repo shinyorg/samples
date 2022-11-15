@@ -16,7 +16,7 @@
 		<AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
 		<MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
 		<MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-		<TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+		<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
 		<AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
 		<AndroidUseAapt2>true</AndroidUseAapt2>
 		<AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
@@ -54,9 +54,7 @@
 		<Reference Include="System.Numerics.Vectors" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Shiny" />
-		<PackageReference Include="Xamarin.Forms" />
-		<PackageReference Include="Xamarin.Essentials" />
+		<PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.4.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Include="MainActivity.cs" />
@@ -88,7 +86,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Sample\Sample.csproj">
-			<Project>{C179D0D7-A1CD-4D26-B663-0884AA0552E8}</Project>
+			<Project>{C4A94D57-C146-4DE5-A133-30704425FCE7}</Project>
 			<Name>Sample</Name>
 		</ProjectReference>
 	</ItemGroup>

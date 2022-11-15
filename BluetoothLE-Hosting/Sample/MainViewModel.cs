@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reactive.Linq;
 using System.Text;
 using System.Windows.Input;
@@ -46,9 +47,7 @@ namespace Sample
                     await this.hostingManager.StartAdvertising(new AdvertisementOptions
                     {
                         LocalName = this.LocalName,
-                        AndroidIncludeDeviceName = this.AndroidIncludeDeviceName,
-                        AndroidIncludeTxPower = this.AndroidIncludeTx,
-                        UseGattServiceUuids = true
+                        ServiceUuids = new List<string> { ServiceUuid }
                     });
 
                     this.ServerText = "Stop Server";

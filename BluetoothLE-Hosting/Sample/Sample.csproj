@@ -4,18 +4,4 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DebugType>portable</DebugType>
-		<DebugSymbols>true</DebugSymbols>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Shiny" />
-		<PackageReference Include="Shiny.BluetoothLE.Hosting" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\..\_Template\Sample.Shared\Sample.Shared.csproj" />
-	</ItemGroup>
 </Project>

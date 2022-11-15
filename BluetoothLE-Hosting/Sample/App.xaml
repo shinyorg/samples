@@ -1,13 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sample="clr-namespace:Sample;assembly=Sample.Shared"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              x:Class="Sample.App">
+
     <Application.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <sample:Styles />
-            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="Primary">#C2E812</Color>
+            <Color x:Key="PrimaryDark">#4ba677</Color>
+            <Color x:Key="Accent">#745296</Color>
+            <Color x:Key="NavigationBarTextColor">White</Color>
+
+            <Style x:Key="NoDataLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="{DynamicResource Large}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="ios:Page.UseSafeArea" Value="True"/>
+                <Setter Property="ios:Page.LargeTitleDisplay" Value="Always" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="CornerRadius" Value="23" />
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="4" />
+                <Style.Triggers>
+                    <Trigger TargetType="Button" Property="IsEnabled" Value="True">
+                        <Setter Property="Opacity" Value="1.0" />
+                    </Trigger>
+                    <Trigger TargetType="Button" Property="IsEnabled" Value="False">
+                        <Setter Property="Opacity" Value="0.6" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style TargetType="NavigationPage" ApplyToDerivedTypes="true">
+                <Setter Property="BarTextColor" Value="{StaticResource NavigationBarTextColor}" />
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryDark}" />
+            </Style>
+
+            <Style TargetType="TabbedPage" ApplyToDerivedTypes="true">
+                <Setter Property="BarTextColor" Value="{StaticResource NavigationBarTextColor}" />
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryDark}" />
+            </Style>
+
+            <Style TargetType="Switch" ApplyToDerivedTypes="True">
+                <Setter Property="OnColor" Value="{StaticResource Primary}" />
+            </Style>
+
+            <Style x:Key="HR" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="HeightRequest" Value="1" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="5" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

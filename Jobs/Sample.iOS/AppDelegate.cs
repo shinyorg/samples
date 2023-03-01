@@ -18,4 +18,7 @@ namespace Sample.iOS
 			return base.FinishedLaunching(app, options);
 		}
 	}
+
+	public override void PerformFetch(UIApplication application, Action<UIBackgroundFetchResult> completionHandler)
+		=> this.ShinyPerformFetch(completionHandler);
 }

@@ -1,6 +1,7 @@
-# Shiny .NET v2 Samples
+# v3 Samples, you can find them in the main repository [https://github.com/shinyorg/shiny/tree/master/samples](https://github.com/shinyorg/shiny/tree/master/samples)
 
-> If you are looking for v3 Samples, you can find them in the main repository [https://github.com/shinyorg/shiny/tree/master/samples](https://github.com/shinyorg/shiny/tree/master/samples)
+
+# OLD Shiny .NET v2 Samples
 
 ## NOTES
 1. Many samples have Shiny projects linked for debugging/testing by the devs, but the samples are defaulted to use nuget packages.  If the Shiny projects aren't loading, don't worry - IGNORE THEM.  The project will build just fine with nuget.  They are linked through submodules if needed for debugging against the shiny source code
